@@ -1,0 +1,466 @@
+/*Variables*/
+:root{
+	/*
+		h (altura) - w (anchura) - c (color)
+	*/
+	--totalw: 100%;
+	--totalh: 100%;
+	--headerh: 710px;
+	--divisorh: 70px;/*Separador de pantallas*/
+	--cheader: rgba(0,0,0,0.45);
+	/*Imagenes*/
+	--divisorimg: url(img/divisor.jpg);
+	--headerimg: url(img/miriamcopy.jpg);
+	--imgmiriam: url(img/miriam.png);
+	--proimg: url(img/pro.png);
+	--contraimg: url(img/contra.png);
+
+
+}
+
+/* Configuración general */
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "verdana","montserrat","serif";
+	/*Para hacer mas fluida el cambio de tamaños*/
+	transition: 0.8s font-size;
+}
+
+/*Divisor*/
+.divisor{
+	width: var(--totalw);
+	height: var(--divisorh);
+	background-image: var(--divisorimg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+
+/*Sector 1*/
+header{
+	/*border: 1px solid black;*/
+	width: var(--totalw);
+	height: var(--headerh);
+	background-image: var(--headerimg);
+	background-attachment: fixed;
+	background-size: cover;
+	position:relative;
+}
+
+
+.flex-header{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+
+	background-color: var(--cheader);
+}
+
+h1{
+	color: white;
+	font-size: 1.75em;
+	text-align: center;
+	text-shadow: 2px 2px 1px black;
+	margin: 50px 0;
+}
+
+.txtheader{
+	font-size: 0.8em;
+	padding: 0 10px;
+	border-left: 5px solid orange;
+}
+
+.txtheader strong{
+	display: block;
+	margin: 15px 0;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+
+
+.headerbuton{
+	border: 3px solid white;
+	padding: 20px;
+	margin: 20px 0;
+	font-size: 1.05em;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	transition: 1s background-color, 1s color, 1s font-size;
+}
+
+.headerbuton:hover{
+	background-color: orange;
+	color: black;
+	font-size: 1.1em;
+}
+
+.link{
+	text-decoration: none;
+}
+
+.txtheader2{
+	color: white;
+	font-size: 1em;
+	margin: 5px 0;
+	text-align: center;
+	width: 80%;
+	text-shadow: 1px 1px 1px black;
+}
+.txtheader2 strong{
+	color: orange;
+	text-shadow: 1px 1px black;
+}
+
+/*Final del sector 1*/
+
+/*Configuracion generales secciones 2,3,4,5,6*/
+
+.flex-section-column{
+	margin: 25px 0;
+	width: var(--totalw);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.flex-section-row{
+	width: var(--totalw);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.txtsection{
+	
+	width: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px 0;
+}
+
+h2{
+	color: orange;
+	text-align: center;
+	margin: 20px 0;
+	font-size: 1.2em;
+}
+
+.txtgrupsector{
+	text-align: justify;
+	margin: 40px 0;
+	font-size: 1em;
+}
+.txtcentersect{
+	font-size: 1em;
+	text-align: center;
+}
+
+/*Final de la config sect 2,3,4,5,6*/
+
+/*Sector 3*/
+.containerboxs3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.box-lines3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.boxsector3{
+	border: 3px solid orange;
+	border-radius: 30px;
+	padding: 30px;
+	margin: 20px 40px;
+	width: 60%;
+	height: auto;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.boxsector3 strong{
+		color: orange;
+}
+
+/*Final sector 3*/
+
+/*Sector quien soy*/
+.img{
+	display: none;
+	background-image: var(--imgmiriam);
+	background-size: cover;
+	box-shadow: 2px 3px 5px gray;
+}
+
+.img2{
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	background-image: var(--imgmiriam);
+	background-size: cover;
+	margin: 15px 0 0 0;
+	outline: 5px solid orange;
+	box-shadow: 2px 3px 5px gray;
+}
+
+/*Final sector quien soy*/
+
+/*Barner*/
+	.barner{
+		background-color: grey;
+	}
+
+	.buton{
+		text-align: center;
+		padding: 15px;
+		background-color: orange;
+		color: black;
+		border-radius: 10px;
+		margin: 20px 0;
+		transition: 1s background,1s border,1s font-size;
+		font-size: 1.1em;
+		font-weight: bold;
+
+	}
+
+	.buton2{
+		text-align: center;
+		padding: 20px;
+		background-color: white;
+		color: black;
+		border-radius: 10px;
+		margin: 30px 0;
+		transition: 1s background,1s border,1s font-size;
+		font-size: 1.1em;
+		width: 40%;
+
+	}
+
+	.buton:hover{
+		border: 3px solid orange;
+		background-color: white;
+	}
+
+	.txtbuton{
+		text-align: center;
+		color: white;
+		font-size: 0.9em;
+		margin: 20px 0;
+	}
+
+/* final barner*/
+
+/*Sector 4*/
+	.flex-section-row4{
+		width: var(--totalw);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		display: flex;
+	}
+	.pro{
+		display: inline;
+		width: 60px;
+		height: 60px;
+		background:var(--proimg);
+		background-size: cover;
+	}
+	.contra{
+		display: inline;
+		width: 60px;
+		height: 60px;
+		background:var(--contraimg);
+		background-size: cover;
+	}
+/*final sector 4*/
+
+/*Sector 5*/
+.question{
+	height: auto;
+	background-color: orange;
+	border-radius: 20px;
+	padding: 15px;
+	font-weight: bold;
+	margin: 35px 0 0 0;
+	cursor: pointer;
+	font-size: 1em;
+	text-align: center;
+}
+
+.question:hover{
+	
+	font-size: 1.2em;
+
+}
+
+.question:hover .answer{
+	color: white;
+}
+
+.answer{
+	display: none;
+	font-size: 1em;
+	margin-top: 10px;
+	text-align: justify;
+	padding: 10px;
+}
+
+/*Final*/
+
+
+/*Media Querys*/
+@media (min-width: 768px){
+	/*Sector1*/
+	h1{
+		font-size: 2.1em;
+	}
+	.txtheader{
+		font-size: 1em;
+	}
+
+	.headerbuton{
+		font-size: 1.3em;
+	}
+	.headerbuton:hover{
+		font-size: 1.5em;
+	}
+
+	.txtheader2{
+		font-size: 1.2em;
+	}
+	/*Fin del sector 1*/
+	/*Configuracion general sectores 2,3,4,5*/
+	h2{
+		font-size: 1.6em;
+	}
+
+	.txtgrupsector{
+		width: 70%;
+	}
+	/*Final de la config sect 2,3,4,5,6*/
+	/*Sector quien soy*/
+	.img{
+		width: 40%;
+		height: 400px;
+		display: block;
+		border-radius: 600px;
+
+	}
+
+	.img2{
+		display: none;
+	}
+
+	/*Final sector quien soy*/
+
+	/*Barner*/
+	.buton{
+		font-size: 1.4em;
+	}
+	.buton:hover{
+		font-size: 1.6em;
+	}
+	.txtbuton{
+		font-size: 1.1em;
+	}
+
+	/* final barner*/
+
+	/*Sector 4*/
+	.flex-section-row4{
+		width: var(--totalw);
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+	.flex-section-row4 .txtsection{
+		width: 40%;
+	}
+	/*final sector 4*/
+
+}
+
+@media (min-width: 1024px){
+	/*Sector1*/
+	h1{
+		font-size: 3em;
+	}
+
+	/*Final del sector 1*/
+	/*Configuracion general sectores 2,3,4,5*/
+	h2{
+		font-size: 1.8em;
+	}
+	.txtsection{
+		width: 65%;
+	}
+	/*Final de la config sect 2,3,4,5,6*/
+	/* Sector 3*/
+	.containerboxs3{
+		flex-direction: row;
+		width: auto;
+	}
+	.boxsector3{
+		height: 130px;
+		width: 200px;
+	}
+
+	/*Final sector 3*/
+	/*Sector quien soy*/
+	.img{
+		width: 40%;
+		height: 500px;
+		display: block;
+		border-radius: 600px;
+
+	}
+	.img2{
+		display: none;
+	}
+
+	/*Final sector quien soy*/
+
+	/*Barner*/
+
+
+	/* final barner*/
+
+	/*Sector 5*/
+
+	/*final sector 5*/
+
+}
+
+@media (max-width: 1580px){
+
+}
+
+
+@media (min-width: 300){
+
+}
